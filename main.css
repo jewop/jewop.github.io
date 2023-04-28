@@ -4,12 +4,15 @@ body {
 @media (max-width: 767px) {
   .mdiv {
     width: 100%;
-    left:0;
-    position: block;
   }
 }
 @media (min-width: 768px) {
   .mdiv {
+    width: 500px;
+    /* Other styles */
+  }
+}
+.mdiv {
 	width: 500px;
 	position: absolute;
 	left: 50%;
@@ -17,8 +20,6 @@ body {
 	-webkit-transform: translate(-50%,0);
 	transform: translate(-50%,0);
 }
-}
-
 .header {
 	width:1%;
 }
@@ -58,4 +59,10 @@ p {
 strong {
 	font-weight: bolder;
 	color: #fff;
+}
+.a1 {
+	font-weight: bold;
+	color: #aaa;
+	text-decoration: none;
+	font-weight: cursive;
 }

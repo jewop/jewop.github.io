@@ -5,6 +5,7 @@ body {
   .mdiv {
     width: 100%;
     position: block;
+    left:0;
   }
 }
 @media (min-width: 768px) {

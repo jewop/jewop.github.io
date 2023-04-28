@@ -4,21 +4,18 @@ body {
 @media (max-width: 767px) {
   .mdiv {
     width: 100%;
+    position: block;
   }
 }
 @media (min-width: 768px) {
   .mdiv {
     width: 500px;
-    /* Other styles */
-  }
-}
-.mdiv {
-	width: 500px;
 	position: absolute;
 	left: 50%;
 	-ms-transform: translateX(-50%);
 	-webkit-transform: translate(-50%,0);
 	transform: translate(-50%,0);
+  }
 }
 .header {
 	width:1%;

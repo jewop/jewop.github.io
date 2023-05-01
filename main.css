@@ -43,13 +43,13 @@ body {
 	border-radius: 8px;
 	background-position: center;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
 	color: #fff;
 	margin: 2px 5px 2px 5px;
 	font-family: monospace;
 	font-weight: bold;
 }
-p {
+p, h4, h5, h6 {
 	color: #989898;
 	margin: 2px 5px 2px 5px;
 	font-family: monospace;

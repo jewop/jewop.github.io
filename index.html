@@ -18,16 +18,41 @@
 	body {
 		background-color: #000;
 	}
-	.man {
-		position: absolute;
-  		top: 50%;
-  		left: 50%;
-  		-ms-transform: translateX(-50%) translateY(-50%);
-  		-webkit-transform: translate(-50%,-50%);
-  		transform: translate(-50%,-50%);
+	@media (min-width:768px){
+			.man {
+				width: 300px;
+				position: absolute;
+  			top: 50%;
+  			left: 50%;
+  			-ms-transform: translateX(-50%) translateY(-50%);
+  			-webkit-transform: translate(-50%,-50%);
+  			transform: translate(-50%,-50%);
+			}	
+	}
+	@media (max-width:767px){
+			.man {
+				width: 300px;
+				position: absolute;
+  			top: 50%;
+  			left: 50%;
+  			-ms-transform: translateX(-50%) translateY(-50%);
+  			-webkit-transform: translate(-50%,-50%);
+  			transform: translate(-50%,-50%);
+			}	
+	}
+	@media (max-width:300px){
+			.man {
+				width: 100%;
+				position: absolute;
+  			top: 50%;
+  			left: 50%;
+  			-ms-transform: translateX(-50%) translateY(-50%);
+  			-webkit-transform: translate(-50%,-50%);
+  			transform: translate(-50%,-50%);
+			}	
 	}
 	input {
-		width: 250px;
+		width: 220px;
 		height: 30px;
 		font-size: 18px;
 		color: #eee;
@@ -62,7 +87,7 @@
 		font-family: monospace;
 	}
 	.articles {
-		width: 307px;
+		width: 297px;
 	}
 	a {
 		color: #4444DD;
@@ -77,12 +102,14 @@
 	}
 </style>
 <body>
-<div class="man">
-	<div align="center"><h1>karchive</h1></div>
-	<input type="text" id="searchInput" placeholder="Іздеу мәтінін енгізіңіз" onkeydown="handleKeyDown(event)">
-  	<button id="searchButton" onclick="searchGoogle()">Іздеу</button>
-  	<br><br>
-  	<div class="articles">
+<div class="man" align="center">
+	<div align="center" style="width: 100%;"><h1>karchive</h1></div>
+	<table align="center"><tr>
+		<td><input type="text" id="searchInput" placeholder="Іздеу мәтінін енгізіңіз" onkeydown="handleKeyDown(event)"></td>
+		<td><button id="searchButton" onclick="searchGoogle()">Іздеу</button></td>
+	</tr></table>
+<br>
+  	<div class="articles" align="center">
   		<h2>Оқу материалдары:</h2>
   		<a href="one.html">Қазақ тілі - Емтихан дайындық</a>
   	</div>
